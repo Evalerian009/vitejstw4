@@ -1,15 +1,11 @@
-import Footer from "./components/Footer"
-import Navbar from "./components/Navbar"
-import Home from "./pages/home/Home"
+import { Outlet } from 'react-router-dom';
 
 const App = () => {
   return (
-    <div className=''>
-      <Navbar />
-      <Home />
-      <Footer />
+    <div className="flex flex-col min-h-screen">
+      <Outlet /> {/* This renders the current route's component */}
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

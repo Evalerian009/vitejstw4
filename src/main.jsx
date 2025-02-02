@@ -1,10 +1,34 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import './index.css';
+import App from './App.jsx';
+import Home from './pages/home/Home.jsx';
+import Pricing from './pages/pricing/Pricing.jsx';
+import Testimonials from './pages/testimonials/Testimonials.jsx';
+import Navbar from './components/Navbar.jsx';
+import Footer from './components/Footer.jsx';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: (
+      <div className='bg-gray-50 font-montserrat'>
+        <Navbar />
+        <App />
+        <Footer />
+      </div>
+    ),
+    children: [
+      { path: '', element: <Home /> },
+      { path: 'pricing', element: <Pricing /> },
+      { path: 'testimonials', element: <Testimonials /> },
+    ],
+  },
+]);
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
-  </StrictMode>,
-)
+    <RouterProvider router={router} />
+  </StrictMode>
+);

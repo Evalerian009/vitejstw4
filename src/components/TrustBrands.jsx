@@ -4,7 +4,7 @@ const brands = ['./bbtc-logo.webp', './currency-logo.png', './forbes-logo.png', 
 
 const TrustBrands = () => {
   return (
-    <div className={`bg-gray-50 ${styles.padY}`}>
+    <div className={`bg-gray-100 ${styles.padY}`}>
         <h4 className="text-center text-gray-500 text-[0.85rem]">Trusted by 100+ publications...</h4>
         <ul className={`grid grid-cols-2 gap-10 md:grid-cols-3 lg:grid-cols-6 mt-14 ${styles.padX} `}>
             {brands.map((item,idx) => ((

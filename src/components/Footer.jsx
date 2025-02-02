@@ -22,7 +22,7 @@ const Footer = () => {
             <div>
                 <form action="" className="flex">
                     <label className="border block bg-white w-[200px] lg:w-[240px] py-1.5 rounded-l-lg h-fit">
-                        <input type="text" className="bg-transparent placeholder:text-gray-400 indent-2 w-full outline-0" placeholder="Enter your email" />
+                        <input type="text" className="bg-transparent placeholder:text-gray-400 indent-2 w-full outline-0 text-gray-800" placeholder="Enter your email" />
                     </label>
                     <button className="border h-fit py-1.5 px-3 rounded-r-lg font-semibold hover:bg-indigo-500 cursor-pointer duration-200">Subscribe</button>
                 </form>

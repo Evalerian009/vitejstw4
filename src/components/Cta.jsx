@@ -1,5 +1,5 @@
-import Button from "../../../components/Button"
-import { styles } from "../../../constants/styles"
+import Button from "./Button"
+import { styles } from "../constants/styles"
 
 const Cta = () => {
   return (

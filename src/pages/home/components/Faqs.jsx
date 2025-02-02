@@ -6,16 +6,16 @@ import { styles } from "../../../constants/styles";
 import PropTypes from 'prop-types';
 
 const AccordionItem = ({ faq, isOpen, onClick }) => (
-  <li className="border rounded-lg overflow-hidden">
+  <li className="border text-gray-600 border-gray-300 rounded-lg overflow-hidden ">
     <button
-      className="w-full p-3 text-left font-medium bg-gray-100 hover:bg-gray-200"
+      className="w-full p-3 text-left font-medium cursor-pointer bg-gray-100 hover:bg-gray-200"
       onClick={onClick}
     >
       {faq.question}
     </button>
     <div
       className={`transition-[max-height] duration-300 ease-in-out overflow-hidden ${
-        isOpen ? "max-h-[400px] opacity-100 p-3 bg-white border-t" : "max-h-0 opacity-0"
+        isOpen ? "max-h-[400px] opacity-100 p-3 bg-white border-t border-gray-300" : "max-h-0 opacity-0"
       }`}
     >
       {faq.answer}

@@ -12,7 +12,7 @@ const Support = () => {
             {supportData.map((card,idx)=>{
                 const CardIcon = card.icon
                 return(
-                    <li key={card.id} className="text-center h-[375px] lg:h-[325px] flex flex-col lg:justify-center p-8">
+                    <li key={card.id} className="text-center h-[375px] lg:h-[325px] flex flex-col p-8">
                         <span className="text-blue text-[1.5rem] bg-indigo-100 w-[70px] h-[70px] rounded-full grid place-content-center relative mx-auto">
                             <span className="absolute w-[50px] h-[50px] bg-indigo-300 rounded-full top-[50%] -translate-y-[50%] left-[50%] -translate-x-[50%]" />
                             <CardIcon className="relative" />

@@ -23,7 +23,7 @@ const Tabs = () => {
                             onClick={() => handleTabChange(idx)}
                             aria-selected={activeTab === idx}
                             aria-controls={`tab-panel-${idx}`}
-                            className="w-full py-7 px-5 lg:py-4 lg:pl-12 flex flex-col text-left focus:outline-none"
+                            className="w-full py-7 px-5 lg:py-4 lg:pl-12 flex flex-col text-left focus:outline-none cursor-pointer"
                         >
                             {/* Active Indicator */}
                             <div className={`absolute w-[4px] h-full md:w-full md:h-[4px] lg:w-[4px] lg:h-full left-0 top-0 transition-all duration-500 ${activeTab === idx ? 'bg-blue' : 'bg-indigo-100'}`} />

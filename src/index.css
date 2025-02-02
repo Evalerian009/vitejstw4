@@ -3,4 +3,11 @@
 @theme {
     --color-blue: #4f46e4;
     --color-gray: #e5e7eb;
+    --font-montserrat: 'Montserrat', ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+
+  }
+
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('/Montserrat.ttf');
   }

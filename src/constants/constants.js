@@ -1,4 +1,6 @@
-import { BsArrowRight } from "react-icons/bs"
+import { LiaBoltSolid } from "react-icons/lia";
+import { PiChatCircleDotsLight, PiWallet } from "react-icons/pi";
+import { TfiCommentsSmiley } from "react-icons/tfi";
 
 export const navLinks = [
     {
@@ -9,12 +11,12 @@ export const navLinks = [
     {
         id: 'nvl2',
         name: 'Pricing',
-        url: '/pricing'
+        url: 'pricing'
     },
     {
         id: 'nvl3',
         name: 'Testimonials',
-        url: '/testimonials'
+        url: 'testimonials'
     },
 ]
 
@@ -42,28 +44,28 @@ export const tabList0 = [
 export const supportData = [
     {
         id: 'sd001',
-        icon: BsArrowRight,
+        icon: PiChatCircleDotsLight,
         textlg: 'Password doesn\'t work',
         textSm: `You thought you knew your password, but now it won't unlock your wallet. Perhaps it involves different numbers or different capitalization than you remember.`,
         linkTxt: 'Recover my password'
     },
     {
         id: 'sd002',
-        icon: BsArrowRight,
+        icon: LiaBoltSolid,
         textlg: 'Partial seed phrase recovery',
         textSm: 'You wrote down a list of words, and the passphrase is some combination of those words.',
         linkTxt: 'Recover my seed'
     },
     {
         id: 'sd003',
-        icon: BsArrowRight,
+        icon: PiWallet,
         textlg: 'Lost access to a major chain wallet',
         textSm: 'You have lost access to a common crypto asset, such as Bitcoin, Ethereum, Litecoin, Dogecoin, an NFT or dozens of other alt coins',
         linkTxt: 'Recover my wallet'
     },
     {
         id: 'sd004',
-        icon: BsArrowRight,
+        icon: TfiCommentsSmiley,
         textlg: 'You\'ve been scammed',
         textSm: 'We offer a Tracing service (not a recovery service) for those looking to build their case and hopefully uncover the real-world identity of their scammer.',
         linkTxt: 'Recover my wallet'
