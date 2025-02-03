@@ -35,23 +35,23 @@ const Navbar = () => {
 
                 {/* Mobile Menu Button */}
                 <button 
-                    className="text-2xl cursor-pointer lg:hidden" 
+                    className="text-2xl cursor-pointer lg:hidden relative z-[100]" 
                     onClick={toggleMenu}
                     aria-label="Toggle navigation menu"
                 >
                     {isActive ? <GoX /> : <RxHamburgerMenu />}
                 </button>
 
-                {/* Mobile Navigation Menu */}
-                <ul className={`${styles.padX} flex flex-col absolute top-[81px] w-full bg-gray-50 left-0 z-9 text-lg font-semibold border-gray-200 transition-all duration-300 
-                    ${isActive ? 'h-[400px] py-8 border-b' : 'h-0 overflow-hidden'} lg:hidden`}>
-                    
-                    <NavLinks isMobile setIsActive={setIsActive} />
-                    <li className="w-full mt-7">
-                        <Button color="blue" title="Contact Us" custStyles="block" />
-                    </li>
-                </ul>
             </div>
+            {/* Mobile Navigation Menu */}
+            <ul className={`${styles.padX} flex flex-col absolute top-[69px] w-full bg-gray-50 left-0 z-9 text-lg font-semibold border-gray-200 transition-all duration-1000 
+                ${isActive ? 'py-8 border-b shadow translate-y-[45px]' : 'overflow-hidden -translate-y-full'} lg:hidden h-[350px]`}>
+                
+                <NavLinks isMobile setIsActive={setIsActive} />
+                <li className="w-full mt-7">
+                    <Button color="blue" title="Contact Us" custStyles="block" />
+                </li>
+            </ul>
         </nav>
     );
 };
@@ -64,7 +64,10 @@ const NavLinks = ({ isMobile, setIsActive }) => (
                 <Link 
                     to={link.url} 
                     className={`${isMobile ? 'block py-4' : 'px-5'}`} 
-                    onClick={() => isMobile && setIsActive(false)} // Close menu on mobile click
+                    onClick={() => {
+                        window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to top
+                        if (isMobile) setIsActive(false); // Close mobile menu if open
+                    }}
                 >
                     {link.name}
                 </Link>
