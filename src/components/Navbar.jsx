@@ -15,21 +15,21 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav className="sticky top-0 z-50 shadow-md transition-all duration-300 bg-gray-50">
+        <nav className="sticky top-0 z-50 shadow-md bg-indigo-50">
             {/* Top Info Bar */}
-            <div className={`bg-blue relative z-12 text-white ${styles.padX} flex justify-end items-center gap-3 py-3 text-sm`}>
+            <div className={`bg-blue text-white ${styles.padX} flex justify-end items-center gap-3 py-3 text-sm relative z-[999]`}>
                 <p>info@company.mail</p>
                 <span className="w-[1px] h-5 bg-gray-50" />
                 <p>Call Us Now: +1 44-424-442</p>
             </div>
 
             {/* Main Navbar */}
-            <div className={`relative z-11 bg-gray-50 flex justify-between items-center py-5 ${styles.padX} border-b border-gray-200`}>
+            <div className={`bg-gray-50 flex justify-between items-center py-5 ${styles.padX} border-b border-gray-200`}>
                 <Link to="/" className="text-lg font-bold">Logo</Link>
 
                 {/* Desktop Navigation */}
                 <div className="hidden lg:flex gap-12 items-center">
-                    <NavLinks />
+                    <NavLinks setIsActive={setIsActive} /> {/* ✅ Pass setIsActive */}
                     <Button color="blue" title="Contact Us" />
                 </div>
 
@@ -41,11 +41,11 @@ const Navbar = () => {
                 >
                     {isActive ? <GoX /> : <RxHamburgerMenu />}
                 </button>
-
             </div>
-            {/* Mobile Navigation Menu */}
-            <ul className={`${styles.padX} flex flex-col absolute top-[69px] w-full bg-gray-50 left-0 z-9 text-lg font-semibold border-gray-200 transition-all duration-1000 
-                ${isActive ? 'py-8 border-b shadow translate-y-[45px]' : 'overflow-hidden -translate-y-full'} lg:hidden h-[350px]`}>
+
+            {/* Mobile Navigation Menu (Fixed Animation Conflict) */}
+            <ul className={`${styles.padX} flex flex-col absolute top-[69px] w-full bg-gray-50 left-0 z-9 text-lg font-semibold border-gray-200
+                transition-transform duration-300 ${isActive ? 'translate-y-[45px]' : '-translate-y-full'} lg:hidden h-[350px]`}>
                 
                 <NavLinks isMobile setIsActive={setIsActive} />
                 <li className="w-full mt-7">
@@ -78,7 +78,7 @@ const NavLinks = ({ isMobile, setIsActive }) => (
 
 NavLinks.propTypes = {
     isMobile: PropTypes.bool,
-    setIsActive: PropTypes.func
+    setIsActive: PropTypes.func, // ✅ Optional (can be undefined)
 };
 
 export default Navbar;

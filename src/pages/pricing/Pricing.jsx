@@ -9,9 +9,9 @@ const Pricing = () => {
     <div className={`${styles.padY} text-gray-700`}>
       <div className={`${styles.padX}`}>
         <Title 
-          lgheader={'Locked Wallet Recovery and Scam Tracing'} 
+          lgheader={'Wallet Recovery and Scam Investigation Pricing'} 
           smHeader={'Pricing'} 
-          txt={'Simple, transparent pricing. Explore our pricing for wallet recoveries and scam investigations below. Contact us now for a free consultation.'} 
+          txt={'Clear and straightforward pricing. Browse our pricing for wallet recovery services and scam investigations below. Reach out to us today for a free consultation.'} 
         />
 
         <ul className='mt-16 flex flex-col md:flex-row gap-7'>
@@ -22,10 +22,10 @@ const Pricing = () => {
 
         <h5 className='mt-32 text-center font-semibold text-[1.85rem]'>Understanding our Pricing</h5>
         <div className='flex flex-col gap-5 leading-relaxed mt-5 max-w-[960px] mx-auto'>
-          <p>We understand that entrusting us with your assets is a big deal. That’s why we take our job of recovering your lost assets very seriously. Our expertise and knowledge in the field of crypto asset recovery is what sets us apart, and it’s what allows us to crack wallet passwords so that you can retrieve your assets.</p>
-          <p>We also know that the process of crypto asset recovery often involves sensitive personal and financial information, that’s why we handle every case with the highest level of security and confidentiality.</p>
-          <p>For password recoveries, we charge a fee of 20% of tokens recovered, which is a reflection of the value we bring to the table through our expertise and secure handling of each case.</p>
-          <p>And here’s the best part: our service is risk-free! That means you only pay us if we successfully recover your assets. If we can’t crack the wallet, you don’t pay a dime. We believe in putting our money where our mouth is, and that’s why we are confident in our abilities to recover your assets.</p>
+          <p>We understand how important your assets are, and we take recovering them very seriously. Our deep expertise in crypto asset recovery enables us to effectively crack wallet passwords and help you retrieve your funds.</p>
+          <p>We also recognize that this process involves highly sensitive personal and financial data, which is why we handle every case with the utmost confidentiality and security.</p>
+          <p>For password recovery services, we charge a 20% fee on any recovered assets. This fee reflects the valuable expertise and secure approach we bring to each case.</p>
+          <p>Best of all, our service is risk-free! You only pay if we successfully recover your assets. If we’re unable to crack your wallet, you won’t owe anything. We stand by our ability to recover your funds, and we’re confident in our results.</p>
         </div>
       </div>
 

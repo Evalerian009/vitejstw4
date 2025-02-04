@@ -2,32 +2,32 @@ export const pricing = [
     {
         'id': '01',
         valuePrefix: {
-            value:'20%',
+            value: '20%',
             style: 'lg'
         },
         valueSuffix: {
             value: 'wallet',
             style: 'sm'
         },
-        header: 'Password recovery',
-        txt: 'We structure our pricing to prioritize our clients security.',
+        header: 'Password Recovery',
+        txt: 'Our pricing is designed with a focus on safeguarding your security.',
         features: [
-            'Dedicated support agent',
-            'Fully doxxed team',
-            '24hr Response Time',
-            'No cost out of pocket',
-            'Unlimmited attacks',
+            'Personalized support agent',
+            'Fully verified team members',
+            '24-hour response time',
+            'No upfront costs',
+            'Unlimited attack attempts',
             'Air-gapped servers',
-            'Optional Zoom consulation',
-            'Attack reporting',
-            'White-glove support',
-            'Custom development'
+            'Optional Zoom consultation',
+            'Detailed attack reports',
+            'Premium support',
+            'Custom solutions'
         ]
     },
     {
         'id': '02',
         valuePrefix: {
-            value:'starts at',
+            value: 'starts at',
             style: 'sm'
         },
         valueSuffix: {
@@ -35,16 +35,16 @@ export const pricing = [
             style: 'lg'
         },
         header: 'Scam Investigations',
-        txt: 'Our investigations help clients work with law enforcement.',
+        txt: 'We assist clients in collaborating with law enforcement during investigations.',
         features: [
-            'Dedicated support agent',
-            'Fully doxxed team',
-            '24hr Response Time',
-            'Up to 50 Transactions',
+            'Personalized support agent',
+            'Fully verified team members',
+            '24-hour response time',
+            'Investigate up to 50 transactions',
             'Air-gapped servers',
-            'In-depth case report',
-            'White-glove support',
-            'Free consultation',
+            'Comprehensive case report',
+            'Premium support',
+            'Free initial consultation',
             'Not a recovery service',
         ]
     },
