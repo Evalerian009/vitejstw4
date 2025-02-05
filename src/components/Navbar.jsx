@@ -30,7 +30,7 @@ const Navbar = () => {
                 {/* Desktop Navigation */}
                 <div className="hidden lg:flex gap-12 items-center">
                     <NavLinks setIsActive={setIsActive} /> {/* ✅ Pass setIsActive */}
-                    <Button color="blue" title="Contact Us" />
+                    <Button color="blue" title="Contact Us" href="contact" />
                 </div>
 
                 {/* Mobile Menu Button */}

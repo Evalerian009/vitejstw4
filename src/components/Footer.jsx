@@ -13,10 +13,10 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <ul className="flex gap-4 font-semibold mt-5">
+                {/* <ul className="flex gap-4 font-semibold mt-5">
                     <li className="hover:text-indigo-200 duration-200"><a href='#'>Pricing</a></li>
                     <li className="hover:text-indigo-200 duration-200"><a href='#'>Testimonials</a></li>
-                </ul>
+                </ul> */}
             </div>
 
             <div>
