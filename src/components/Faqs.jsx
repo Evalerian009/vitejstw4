@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Title from "../../../components/Title";
-import { faqsData } from "../../../constants/constants";
-import { styles } from "../../../constants/styles";
+import Title from "./Title";
+import { faqsData } from "../constants/constants";
+import { styles } from "../constants/styles";
 
 import PropTypes from 'prop-types';
 

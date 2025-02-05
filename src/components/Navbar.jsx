@@ -49,7 +49,7 @@ const Navbar = () => {
                 
                 <NavLinks isMobile setIsActive={setIsActive} />
                 <li className="w-full mt-7">
-                    <Button color="blue" title="Contact Us" custStyles="block" />
+                    <Button color="blue" title="Contact Us" custStyles="block" href="contact" isMobile setIsActive={setIsActive} />
                 </li>
             </ul>
         </nav>

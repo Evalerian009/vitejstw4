@@ -10,8 +10,8 @@ const Cta = () => {
               <p className="text-gray-600 mt-3">Take charge of your finances once again. Click &quot;Get Started&quot; to receive assistance.</p>
             </div>
             <div className="flex flex-col md:flex-row gap-3 mt-7">
-                <Button title="See Our Testimonials" color={'gray'} custStyles={'block text-center'}  />
-                <Button title="Get Started" color={'blue'} custStyles={'block text-center'}  />
+                <Button title="See Our Testimonials" color={'gray'} custStyles={'block text-center'} href="testimonials"  />
+                <Button title="Get Started" color={'blue'} custStyles={'block text-center'} href="pricing"  />
             </div>
         </div>
         

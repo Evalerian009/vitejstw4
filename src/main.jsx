@@ -10,12 +10,13 @@ import Pricing from './pages/pricing/Pricing.jsx';
 import Testimonials from './pages/testimonials/Testimonials.jsx';
 import Navbar from './components/Navbar.jsx';
 import Footer from './components/Footer.jsx';
+import Contact from './pages/contact/Contact.jsx';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: (
-      <div className='font-montserrat overflow-x-clip'>
+      <div className='font-montserrat overflow-x-clip font-medium'>
         <Navbar />
         <App />
         <Footer />
@@ -25,6 +26,7 @@ const router = createBrowserRouter([
       { path: '', element: <Home /> },
       { path: 'pricing', element: <Pricing /> },
       { path: 'testimonials', element: <Testimonials /> },
+      { path: 'contact', element: <Contact /> },
     ],
   },
 ]);

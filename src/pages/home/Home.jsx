@@ -3,7 +3,7 @@ import TrustBrands from '../../components/TrustBrands'
 import AboutUs from './components/AboutUs'
 import Cta from '../../components/Cta'
 import Support from './components/Support'
-import Faqs from './components/Faqs'
+import Faqs from '../../components/Faqs'
 
 const Home = () => {
   return (

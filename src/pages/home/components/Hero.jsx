@@ -13,8 +13,8 @@ const Hero = () => {
             Start your recovery today.</p>
 
             <div className="mt-10 flex flex-wrap gap-3">
-                <Button color='gray' title='Testimonials' custStyles={''} />
-                <Button color='blue' title='Contact Us' />
+                <Button color='gray' title='Testimonials' custStyles={''} href="testimonials" />
+                <Button color='blue' title='Contact Us' href="contact" />
             </div>
         </div>
 
