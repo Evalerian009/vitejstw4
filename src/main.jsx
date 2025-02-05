@@ -16,7 +16,7 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: (
-      <div className='font-montserrat overflow-x-clip font-medium'>
+      <div className='font-montserrat overflow-x-clip font-medium text-gray-600'>
         <Navbar />
         <App />
         <Footer />
