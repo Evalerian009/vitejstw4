@@ -7,8 +7,8 @@ const PriceCard = ({card}) => {
   return (
     <li key={card.id} className='p-6 border rounded-xl border-gray-300 shadow-md lg:w-1/2 h-fit'>
     <p className='flex gap-1.5 items-baseline '>
-      <span className='font-semibold text-[3.25rem]'>20%</span>
-      <span className='font-semibold'>wallet</span>
+      <span className={`${card.valuePrefix.style == 'lg' ? 'font-semibold text-[3.25rem]' : 'font-semibold'} `}>{card.valuePrefix.value}</span>
+      <span className={`${card.valuePrefix.style == 'sm' ? 'font-semibold text-[3.25rem]' : 'font-semibold'} `}>{card.valueSuffix.value}</span>
     </p>
     <h5 className='text-xl mt-5 font-semibold'>Password recovery</h5>
     <p className='text-gray-500'>{card.txt}</p>

@@ -11,7 +11,7 @@ export const pricing = [
         },
         header: 'Password Recovery',
         txt: 'Our pricing is designed with a focus on safeguarding your security.',
-        features: [
+        features: [ 
             'Personalized support agent',
             'Fully verified team members',
             '24-hour response time',

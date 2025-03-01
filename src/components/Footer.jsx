@@ -5,8 +5,8 @@ const Footer = () => {
     <div className={`${styles.padX} ${styles.padY} bg-blue text-white`}>
         <div className="flex flex-col md:flex-row justify-between md:items-center gap-y-7">
             <div>
-                <div className="flex items-center gap-x-3">
-                    <a href='/'>Logo</a>
+                <div className="flex items-center gap-x-5">
+                    <a href='/' className="text-2xl mt-1.5 font-semibold">Cleedenz</a>
                     <div className="relative">
                         <img src="./cloudflare.png" alt="" className="w-[55px]" />
                         <p className="text-[0.4rem] -right-[105%] absolute w-full uppercase font-semibold top-[50%] -translate-y-[50%]">Protected by cloudflare.</p>

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Outlet, useLocation } from "react-router-dom";
+import GoogleTranslate from './components/GoogleTranslate'
 
 const App = () => {
     const [fade, setFade] = useState("opacity-100");
@@ -22,7 +23,7 @@ const App = () => {
         <div className="min-h-screen relative">
             {/* Loading Spinner */}
             {loading && (
-                <div className="fixed inset-0 flex items-center justify-center bg-white bg-opacity-50 z-50">
+                <div className="fixed inset-0 flex items-center justify-center bg-white bg-opacity-50 z-50 font-medium">
                     <div className="w-10 h-10 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
                 </div>
             )}
@@ -31,6 +32,7 @@ const App = () => {
             <div className={`transition-opacity duration-500 ${fade}`}>
                 <Outlet />
             </div>
+            <GoogleTranslate />
         </div>
     );
 };

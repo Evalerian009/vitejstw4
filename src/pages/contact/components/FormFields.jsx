@@ -13,7 +13,7 @@ export const SelectField = ({name,custStyles,title, optionsList}) => {
     return (
         <label className={`${custStyles}`}>
             <span className='block text-sm font-semibold capitalize text-gray-600'>{title}</span>
-            <select className={`border py-2 mt-2 rounded-lg border-gray-300 indent-2 outline-none w-full capitalize text-gray-600`} name={name}>
+            <select className={`border  py-2 mt-2 rounded-lg border-gray-300 indent-2 outline-none w-full capitalize text-gray-600`} name={name}>
               {optionsList.map(option=>((
                 <option key={option}>{option}</option>
               )))}

@@ -25,7 +25,7 @@ const Navbar = () => {
 
             {/* Main Navbar */}
             <div className={`bg-gray-50 flex justify-between items-center py-5 ${styles.padX} border-b border-gray-200`}>
-                <Link to="/" className="text-lg font-bold">Logo</Link>
+                <Link to="/" className="text-lg font-bold">Cleedenz</Link>
 
                 {/* Desktop Navigation */}
                 <div className="hidden lg:flex gap-12 items-center">

@@ -33,9 +33,9 @@ export const reviews = [
 export const sliderSettings = {
     infinite: true,
     autoplay: true,
-    speed: 8000,
+    speed: 5000,
     slidesToShow: 4,
-    autoplaySpeed: 8000,
+    autoplaySpeed: 5000,
     cssEase: "linear",
     responsive: [
         {

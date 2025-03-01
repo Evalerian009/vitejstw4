@@ -29,7 +29,7 @@ const Testimonials = () => {
                 <IoStarSharp  className='text-yellow-400 text-2xl' />
                 <IoStarSharp  className='text-yellow-400 text-2xl' />
               </div>
-              <p className='text-lg h-[200px] min-[540px]:h-[175px] text-gray-700 font-semibold mt-4'>{review.txt}</p>
+              <p className='text-lg h-[230px] md:h-[175px] lg:h-[200px] text-gray-700 font-semibold mt-4'>{review.txt}</p>
               <img src={review.imgSrc} alt="" className='w-[60px] mt-7' />
               <p className='font-semibold text-gray-700 mt-5'>{review.user}</p>
               <p className='text-sm italic text-gray-600'>{review.time}</p>
